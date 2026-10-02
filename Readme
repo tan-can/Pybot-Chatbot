@@ -1,0 +1,129 @@
+# 🤖 PyBot — AI Chatbot
+
+PyBot is a simple AI-powered chatbot built with **Python and Streamlit**. It provides a clean web interface where users can interact with an AI assistant in real time.
+
+This project was built to understand how a Python application can connect to an **LLM API**, send user messages, receive AI-generated responses, and display them through a web interface.
+
+## ✨ Features
+
+* 💬 Interactive chat interface
+* 🤖 AI-generated responses
+* 🧠 Conversation history during the session
+* ⚡ Real-time response generation
+* 🖥️ Simple web-based UI using Streamlit
+* 🔐 API key handled through environment variables
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **Streamlit** — web interface
+* **LLM API** — AI response generation
+* **Git & GitHub** — version control
+
+## 📁 Project Structure
+
+```text
+Pybot-Chatbot/
+│
+├── app.py
+├── requirements.txt
+├── .env
+├── .gitignore
+└── README.md
+```
+
+> `.env` should not be uploaded to GitHub because it contains the API key.
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/tan-can/PyBot-Chatbot.git
+cd PyBot-Chatbot
+```
+
+### 2. Create a virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate it on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Add your API key
+
+Create a `.env` file in the project directory:
+
+```text
+API_KEY=your_api_key_here
+```
+
+Do not commit this file to GitHub.
+
+### 5. Run the application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+## 🔄 How It Works
+
+```text
+User
+  ↓
+Streamlit Chat Interface
+  ↓
+Python Application
+  ↓
+LLM API
+  ↓
+AI-generated Response
+  ↓
+Streamlit Interface
+  ↓
+User
+```
+
+The application takes the user's message, sends it to the configured language model through an API request, receives the generated response, and displays it in the chat interface.
+
+## 🎯 What I Learned
+
+Through this project, I practiced:
+
+* Working with Python packages and APIs
+* Making API requests from a Python application
+* Handling environment variables and API keys
+* Managing conversation history
+* Building a basic web application with Streamlit
+* Using Git and GitHub for version control
+
+## 🔮 Future Improvements
+
+* Add persistent conversation history
+* Add multiple chatbot personalities
+* Add chat export functionality
+* Add streaming responses
+* Improve UI/UX
+* Add document/PDF question answering
+* Deploy the chatbot online
+
+## 👩‍💻 Author
+
+**Tanishka Khatri**
+
+Computer Science Graduate | Python | SQL | Machine Learning | Data Analytics
+
+GitHub: [tan-can](https://github.com/tan-can)
